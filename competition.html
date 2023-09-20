@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lomba</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-light p-2">
+      <div class="container">
+        <div class="navbar-brand" href="#">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="Asah Prestasi" />
+          </a>
+        </div>
+        <button
+          href="index.html"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto navbar-css navigation-bar">
+            <a class="nav-link other-link" aria-current="page" href="#"
+              >Lomba</a
+            >
+            <a class="nav-link other-link" href="index.html#testimony">Testimoni</a>
+            <a class="nav-link other-link" href="index.html#announcement">Pengumuman</a>
+            <a class="nav-link other-link" href="#footer">Tentang Kami</a>
+
+            <a href="#" class="btn shadow-none btn-login">Masuk</a>
+            <a href="register.html" class="btn shadow-none btn-register"
+              >Daftar</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Display Lomba -->
+    <section class="competition-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img
+              src="assets/competition/competition-banner.png"
+              alt="Lomba Lukis"
+            />
+          </div>
+          <div class="col-md-6">
+            <h1>Lomba Lukis</h1>
+            <p>
+              Tingkatkan kemampuan kamu dengan mendaftarkan dirimu dalam
+              berbagai perlombaan dan menangkan perlombaan tersebut untuk
+              mendapatkan berbagai hadiah menarik dan bermanfaat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Bar and Filter -->
+
+    <section class="menu-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <input
+              type="search"
+              class="form-control"
+              placeholder="Cari"
+              aria-label="default input example"
+            />
+          </div>
+          <div class="col-md-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Terbaru"
+              aria-label="default input example"
+              disabled
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori Pilihan Lomba -->
+
+    <section class="competition"> 
+      <div class="container">
+        <div class="header-category">
+          <h3 class="fw-bold">Offline</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-5">
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img src="assets/competition/offline-1.png" alt="Olimpiade" />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Olimpiade</p>
+                <p class="fw-semibold date-time">
+                  25 Februari & 27 Februari 2023
+                </p>
+                <p class="competition-title">Lomba Olimpiade & Lomba</p>
+                <p class="competition-profile">SMPN 2 Saronggi</p>
+                <a href="" class="btn shadow-none d-grid gap-2">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-2.png"
+                  alt="Lomba Tahfidz"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Tahfidz</p>
+                <p class="fw-semibold date-time">10 Juli - 14 September 2023</p>
+                <p class="competition-title">Lomba Tahfidz</p>
+                <p class="competition-profile">Politeknik Negeri Balikpapan</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-3.png"
+                  alt="Lomba Cerdas Cermat"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Cerdas Cermat</p>
+                <p class="fw-semibold date-time">15 Maret 2023</p>
+                <p class="competition-title">Lomba Cerdas Cermat</p>
+                <p class="competition-profile">STMIK LIKMI</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-4.png"
+                  alt="Olimpiade Matematika"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Olimpiade</p>
+                <p class="fw-semibold date-time">5 Maret 2023</p>
+                <p class="competition-title">Olimpiade Matematika Limatik</p>
+                <p class="competition-profile">UNISDA</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-category">
+          <h3 class="fw-bold">
+            Terbaru
+          </h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-5">
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-5.png"
+                  alt="Lomba Pidato Bahasa Inggris"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Pidato</p>
+                <p class="fw-semibold date-time">18 Juli - 5 Agustus 2023</p>
+                <p class="competition-title">Lomba Pidato Bahasa Inggris</p>
+                <p class="competition-profile">Kementrian KLHK</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-6.png"
+                  alt="Lomba Jurnalis LPS"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Jurnalistik</p>
+                <p class="fw-semibold date-time">1 Juni - 31 Agustus 2023</p>
+                <p class="competition-title">Lomba Jurnalis LPS</p>
+                <p class="competition-profile">Lembaga Penjamin Simpanan</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-7.png"
+                  alt="Lomba Karya Tulis Ilmiah"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">KTI</p>
+                <p class="fw-semibold date-time">10 Mei - 22 Mei 2023</p>
+                <p class="competition-title">Lomba Karya Tulis Ilmiah</p>
+                <p class="competition-profile">Dinas PUSDATARU</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-8.png"
+                  alt="Lomba Desain Poster Digital"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Poster</p>
+                <p class="fw-semibold date-time">
+                  22 Des 2022- 15 Januari 2023
+                </p>
+                <p class="competition-title">Lomba Desain Poster Digital</p>
+                <p class="competition-profile">Poltekkes Permata Indonesia</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="header-category">
+          <h3 class="fw-bold">
+            Populer
+          </h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-4 g-5">
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-9.png"
+                  alt="Lomba Poster Fotografi"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Fotografi</p>
+                <p class="fw-semibold date-time">16 – 26 Juni 2023</p>
+                <p class="competition-title">Lomba Poster Fotografi</p>
+                <p class="competition-profile">ECPAT Indonesia</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-10.png"
+                  alt="Lomba Podcast"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Jurnalistik</p>
+                <p class="fw-semibold date-time">16 - 29 Agustus 2023</p>
+                <p class="competition-title">Lomba Podcast</p>
+                <p class="competition-profile">BPK RI</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-11.png"
+                  alt="Lomba Peneliti Belia"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Jurnalistik</p>
+                <p class="fw-semibold date-time">19 - 20 September 2023</p>
+                <p class="competition-title">Lomba Peneliti Belia</p>
+                <p class="competition-profile">UMN Gading Serpong</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="competition-image">
+                <img
+                  src="assets/competition/offline-12.png"
+                  alt="Lomba PingPong & Bola Voli"
+                />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Olahraga</p>
+                <p class="fw-semibold date-time">25 Maret 2023</p>
+                <p class="competition-title">Lomba PingPong & Bola Voli</p>
+                <p class="competition-profile">Universitas Bengkulu</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+      <div class="container container-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-img">
+              <img
+                src="assets/footer-logo.svg"
+                alt="Footer Logo Asah Prestasi"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 g-2 footer-link">
+            <h6>Penelusuran</h6>
+            <div class="penelusuran-link">
+              <p>
+                <a href="index.html">Beranda</a>
+              </p>
+              <p>
+                <a href="#competition">Lomba</a>
+              </p>
+              <p>
+                <a href="index.html#testimony">Testimoni</a>
+              </p>
+              <p>
+                <a href="index.html#announcement">Pengumuman</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 g-2 footer-link">
+            <h6>Kontak Kami</h6>
+            <div class="kontak-kami">
+              <p>
+                <a class="disabled">Telepon : +612345678910</a>
+              </p>
+              <p>
+                <a class="disabled">Email : @asahprestasi</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 g-2 footer-link">
+            <h6>Tentang</h6>
+            <div class="tentang-link">
+              <p>
+                <a class="disabled">Karir</a>
+              </p>
+              <p>
+                <a class="disabled">Kebijakan Privasi</a>
+              </p>
+              <p>
+                <a class="disabled">Ketentuan Layanan</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <p>&copy;2023 GaNiSa Team</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

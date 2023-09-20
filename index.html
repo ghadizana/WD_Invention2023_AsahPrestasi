@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asah Prestasi</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    
+    <nav class="navbar navbar-expand-lg fixed-top bg-light p-2">
+      <div class="container">
+        <div class="navbar-brand" href="#">
+          <a href="index.html">
+            <img src="assets/logo.svg" alt="Asah Prestasi" />
+          </a>
+        </div>
+        <button
+          href="#"
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto navbar-css navigation-bar">
+            <a class="nav-link other-link" href="competition.html">Lomba</a>
+            <a class="nav-link other-link" href="#testimony">Testimoni</a>
+            <a class="nav-link other-link" href="#announcement">Pengumuman</a>
+            <a class="nav-link other-link" href="#footer">Tentang Kami</a>
+
+            <a href="#" class="btn shadow-none btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Masuk</a>
+            <a href="register.html" class="btn btn-register" data-bs-toggle="modal" data-bs-target="#registerModal"
+              >Daftar</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Login Modal -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="form-label w-100">Masuk</h1>
+          </div>
+          <div class="modal-body">
+            <div class="email mb-3">
+              <label for="formControlEmail" class="form-label">Email</label>
+              <input type="email" class="form-control bg-body-secondary" id="formControlEmail" placeholder="Masukan email anda">
+            </div>
+            <div class="password mb-3">
+              <label for="formControlPassword" class="form-label">Kata Sandi</label>
+              <input type="password" class="form-control bg-body-secondary" id="formControlPassword" placeholder="Masukkan kata sandi anda">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="index.html" type="button" class="btn btn-login d-grid gap-2 col-12 mx-auto">Masuk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+
+    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header text-center">
+            <h1 class="form-label w-100">Daftar</h1>
+          </div>
+          <div class="modal-body">
+            <div class="email mb-3">
+              <label for="formControlEmail" class="form-label">Email</label>
+              <input type="email" class="form-control bg-body-secondary" id="formControlEmail" placeholder="Masukan email anda">
+            </div>
+            <div class="password mb-3">
+              <label for="formControlPassword" class="form-label">Kata Sandi</label>
+              <input type="password" class="form-control bg-body-secondary" id="formControlPassword" placeholder="Masukkan kata sandi anda">
+            </div>
+            <div class="confirm-password mb-3">
+              <label for="formControlPassword" class="form-label">Konfirmasi Kata Sandi</label>
+              <input type="password" class="form-control bg-body-secondary" id="formControlPassword" placeholder="Konfirmasi kata sandi anda">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a href="index.html" type="button" class="btn btn-login d-grid gap-2 col-12 mx-auto">Daftar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing Page -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copy">
+              <div class="text-hero-bold">
+                <h1 class="fw-bold">Asah Bakatmu & Raih</h1>
+                <h1 class="fw-bold">Prestasimu</h1>
+              </div>
+              <div class="text-hero-regular">
+                <p>
+                  Ketahui Bakatmu dan asahlah dengan aktif mengikuti berbagai
+                  perlombaan
+                </p>
+                <a href="#" class="btn btn-light btn-lg shadow-none fw-medium" data-bs-toggle="modal" data-bs-target="#registerModal"
+                  >Daftar Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="assets/hero-right.svg" alt="img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Number Counting Animation -->
+
+    <section class="counting-animation">
+      <div class="wrapper">
+        <div id="container">
+          <p class="num fw-bold" data-val="120">000</p>
+          <p class="text fw-semibold">Total Lomba</p>
+        </div>
+        <div id="container">
+          <p class="num fw-bold" data-val="90">000</p>
+          <p class="text fw-semibold">Total Acara</p>
+        </div>
+        <div id="container">
+          <p class="num fw-bold" data-val="210">000</p>
+          <p class="text fw-semibold">Peserta Lomba</p>
+        </div>
+        <div id="container">
+          <p class="num fw-bold" data-val="540">000</p>
+          <p class="text fw-semibold">Pemenang Kompetisi</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competition Category -->
+
+    <section class="category" id="category">
+      <div class="container">
+        <div class="row">
+          <div class="header-category col-md-6">
+            <h3 class="fw-bold">Kategori Lomba</h3>
+          </div>
+          <div class="header-category col-md-6 d-flex flex-row-reverse">
+            <a type="button" class="btn btn-category">Lihat Semua</a>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-90">
+              <div class="category-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                >
+                  <circle cx="25" cy="25" r="25" fill="#4467D4" />
+                </svg>
+                <svg
+                  class="symbol"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M9.33342 2.66663H6.66675V6.66663H2.66675V9.33329H6.66675V13.3333H9.33342V9.33329H13.3334V6.66663H9.33342V2.66663ZM18.6667 6.66663H29.3334V9.33329H18.6667V6.66663ZM18.6667 20H29.3334V22.6666H18.6667V20ZM18.6667 25.3333H29.3334V28H18.6667V25.3333ZM11.0534 19.0533L8.00008 22.12L4.94675 19.0533L3.05341 20.9466L6.12008 24L3.05341 27.0533L4.94675 28.9466L8.00008 25.88L11.0534 28.9466L12.9467 27.0533L9.88008 24L12.9467 20.9466L11.0534 19.0533Z"
+                    fill="#F9F9F9"
+                    fill-opacity="0.956863"
+                  />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Matematika</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-90">
+              <div class="category-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                >
+                  <circle cx="25" cy="25" r="25" fill="#4467D4" />
+                </svg>
+                <svg
+                  class="symbol"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M29.8281 15.4375H28.6562V11.4531C28.6562 11.018 28.4834 10.6007 28.1757 10.293C27.868 9.98535 27.4507 9.8125 27.0156 9.8125H24.9062V8.64062C24.9062 8.2055 24.7334 7.7882 24.4257 7.48053C24.118 7.17285 23.7007 7 23.2656 7H20.4531C20.018 7 19.6007 7.17285 19.293 7.48053C18.9854 7.7882 18.8125 8.2055 18.8125 8.64062V15.4375H12.7188V8.64062C12.7188 8.2055 12.5459 7.7882 12.2382 7.48053C11.9305 7.17285 11.5132 7 11.0781 7H8.26562C7.8305 7 7.4132 7.17285 7.10553 7.48053C6.79785 7.7882 6.625 8.2055 6.625 8.64062V9.8125H4.51562C4.0805 9.8125 3.6632 9.98535 3.35553 10.293C3.04785 10.6007 2.875 11.018 2.875 11.4531V15.4375H1.70312C1.51664 15.4375 1.3378 15.5116 1.20594 15.6434C1.07408 15.7753 1 15.9541 1 16.1406C1 16.3271 1.07408 16.5059 1.20594 16.6378C1.3378 16.7697 1.51664 16.8438 1.70312 16.8438H2.875V20.8281C2.875 21.2632 3.04785 21.6805 3.35553 21.9882C3.6632 22.2959 4.0805 22.4688 4.51562 22.4688H6.625V23.6406C6.625 24.0757 6.79785 24.493 7.10553 24.8007C7.4132 25.1084 7.8305 25.2812 8.26562 25.2812H11.0781C11.5132 25.2812 11.9305 25.1084 12.2382 24.8007C12.5459 24.493 12.7188 24.0757 12.7188 23.6406V16.8438H18.8125V23.6406C18.8125 24.0757 18.9854 24.493 19.293 24.8007C19.6007 25.1084 20.018 25.2812 20.4531 25.2812H23.2656C23.7007 25.2812 24.118 25.1084 24.4257 24.8007C24.7334 24.493 24.9062 24.0757 24.9062 23.6406V22.4688H27.0156C27.4507 22.4688 27.868 22.2959 28.1757 21.9882C28.4834 21.6805 28.6562 21.2632 28.6562 20.8281V16.8438H29.8281C30.0146 16.8438 30.1934 16.7697 30.3253 16.6378C30.4572 16.5059 30.5312 16.3271 30.5312 16.1406C30.5312 15.9541 30.4572 15.7753 30.3253 15.6434C30.1934 15.5116 30.0146 15.4375 29.8281 15.4375ZM4.51562 21.0625C4.45346 21.0625 4.39385 21.0378 4.3499 20.9939C4.30594 20.9499 4.28125 20.8903 4.28125 20.8281V11.4531C4.28125 11.391 4.30594 11.3314 4.3499 11.2874C4.39385 11.2434 4.45346 11.2188 4.51562 11.2188H6.625V21.0625H4.51562ZM11.3125 23.6406C11.3125 23.7028 11.2878 23.7624 11.2439 23.8064C11.1999 23.8503 11.1403 23.875 11.0781 23.875H8.26562C8.20346 23.875 8.14385 23.8503 8.0999 23.8064C8.05594 23.7624 8.03125 23.7028 8.03125 23.6406V8.64062C8.03125 8.57846 8.05594 8.51885 8.0999 8.4749C8.14385 8.43094 8.20346 8.40625 8.26562 8.40625H11.0781C11.1403 8.40625 11.1999 8.43094 11.2439 8.4749C11.2878 8.51885 11.3125 8.57846 11.3125 8.64062V23.6406ZM23.5 23.6406C23.5 23.7028 23.4753 23.7624 23.4314 23.8064C23.3874 23.8503 23.3278 23.875 23.2656 23.875H20.4531C20.391 23.875 20.3314 23.8503 20.2874 23.8064C20.2434 23.7624 20.2188 23.7028 20.2188 23.6406V8.64062C20.2188 8.57846 20.2434 8.51885 20.2874 8.4749C20.3314 8.43094 20.391 8.40625 20.4531 8.40625H23.2656C23.3278 8.40625 23.3874 8.43094 23.4314 8.4749C23.4753 8.51885 23.5 8.57846 23.5 8.64062V23.6406ZM27.25 20.8281C27.25 20.8903 27.2253 20.9499 27.1814 20.9939C27.1374 21.0378 27.0778 21.0625 27.0156 21.0625H24.9062V11.2188H27.0156C27.0778 11.2188 27.1374 11.2434 27.1814 11.2874C27.2253 11.3314 27.25 11.391 27.25 11.4531V20.8281Z"
+                    fill="white"
+                  />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Olahraga</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-90">
+              <div class="category-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                >
+                  <circle cx="25" cy="25" r="25" fill="#4467D4" />
+                </svg>
+                <svg
+                  class="symbol"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                >
+                  <path
+                    d="M24.375 6.79688H21.0012L19.3359 4.29727C19.2716 4.20086 19.1845 4.12186 19.0822 4.06727C18.98 4.01268 18.8659 3.9842 18.75 3.98438H11.25C11.1341 3.9842 11.02 4.01268 10.9178 4.06727C10.8155 4.12186 10.7284 4.20086 10.6641 4.29727L8.99766 6.79688H5.625C4.94124 6.79688 4.28548 7.0685 3.80199 7.55199C3.3185 8.03548 3.04688 8.69124 3.04688 9.375V22.5C3.04688 23.1838 3.3185 23.8395 3.80199 24.323C4.28548 24.8065 4.94124 25.0781 5.625 25.0781H24.375C25.0588 25.0781 25.7145 24.8065 26.198 24.323C26.6815 23.8395 26.9531 23.1838 26.9531 22.5V9.375C26.9531 8.69124 26.6815 8.03548 26.198 7.55199C25.7145 7.0685 25.0588 6.79688 24.375 6.79688ZM25.5469 22.5C25.5469 22.8108 25.4234 23.1089 25.2036 23.3286C24.9839 23.5484 24.6858 23.6719 24.375 23.6719H5.625C5.3142 23.6719 5.01613 23.5484 4.79636 23.3286C4.57659 23.1089 4.45312 22.8108 4.45312 22.5V9.375C4.45312 9.0642 4.57659 8.76613 4.79636 8.54636C5.01613 8.32659 5.3142 8.20313 5.625 8.20313H9.375C9.49089 8.2033 9.60502 8.17482 9.70725 8.12023C9.80947 8.06565 9.89662 7.98664 9.96094 7.89024L11.6262 5.39063H18.3727L20.0391 7.89024C20.1034 7.98664 20.1905 8.06565 20.2928 8.12023C20.395 8.17482 20.5091 8.2033 20.625 8.20313H24.375C24.6858 8.20313 24.9839 8.32659 25.2036 8.54636C25.4234 8.76613 25.5469 9.0642 25.5469 9.375V22.5ZM15 10.5469C14.0265 10.5469 13.075 10.8355 12.2656 11.3764C11.4562 11.9172 10.8253 12.6859 10.4528 13.5852C10.0803 14.4846 9.98279 15.4742 10.1727 16.429C10.3626 17.3837 10.8314 18.2607 11.5197 18.949C12.208 19.6374 13.085 20.1061 14.0398 20.2961C14.9945 20.486 15.9842 20.3885 16.8835 20.016C17.7829 19.6434 18.5516 19.0126 19.0924 18.2032C19.6332 17.3938 19.9219 16.4422 19.9219 15.4688C19.9219 14.1634 19.4033 12.9115 18.4803 11.9885C17.5573 11.0654 16.3054 10.5469 15 10.5469ZM15 18.9844C14.3047 18.9844 13.625 18.7782 13.0468 18.3919C12.4687 18.0056 12.0181 17.4565 11.752 16.8141C11.4859 16.1717 11.4163 15.4649 11.5519 14.7829C11.6876 14.1009 12.0224 13.4745 12.5141 12.9828C13.0057 12.4912 13.6322 12.1563 14.3141 12.0207C14.9961 11.885 15.703 11.9546 16.3454 12.2207C16.9878 12.4868 17.5368 12.9374 17.9231 13.5156C18.3094 14.0937 18.5156 14.7734 18.5156 15.4688C18.5156 16.4012 18.1452 17.2954 17.4859 17.9547C16.8266 18.614 15.9324 18.9844 15 18.9844Z"
+                    fill="#F9F9F9"
+                    fill-opacity="0.956863"
+                  />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Fotografi</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-90">
+              <div class="category-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                >
+                  <circle cx="25" cy="25" r="25" fill="#4467D4" />
+                </svg>
+                <svg
+                  class="symbol"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                >
+                  <path
+                    d="M18.9063 5.70136C19.1625 5.76981 19.381 5.93722 19.5138 6.16675C19.6465 6.39629 19.6827 6.66916 19.6143 6.92536L14.317 26.6987C14.2482 26.9551 14.0804 27.1736 13.8505 27.3063C13.6206 27.4389 13.3474 27.4748 13.091 27.406C12.8346 27.3372 12.6161 27.1694 12.4834 26.9395C12.3508 26.7096 12.3149 26.4364 12.3837 26.18L17.6823 6.40669C17.7164 6.27982 17.7751 6.16089 17.8551 6.05671C17.9351 5.95253 18.0348 5.86513 18.1486 5.79951C18.2624 5.73388 18.388 5.69132 18.5182 5.67425C18.6485 5.65718 18.7808 5.66594 18.9077 5.70002L18.9063 5.70136ZM21.9223 9.77069C22.0102 9.6729 22.1164 9.59338 22.235 9.5367C22.3536 9.48001 22.4822 9.44726 22.6135 9.44033C22.7448 9.43339 22.8761 9.4524 23 9.49628C23.124 9.54015 23.238 9.60803 23.3357 9.69602L25.6517 11.7814C26.6343 12.664 27.4477 13.3974 28.0077 14.0614C28.5943 14.7614 29.013 15.512 29.013 16.44C29.013 17.3667 28.5957 18.1174 28.0077 18.816C27.4477 19.4814 26.6343 20.2147 25.6517 21.0974L23.3357 23.1827C23.1385 23.3602 22.8789 23.4521 22.614 23.4383C22.3491 23.4244 22.1005 23.3058 21.923 23.1087C21.7455 22.9115 21.6535 22.652 21.6674 22.387C21.6813 22.1221 21.7999 21.8735 21.997 21.696L24.2597 19.66C25.3103 18.7147 26.0183 18.0734 26.477 17.5294C26.917 17.0054 27.013 16.7 27.013 16.4387C27.013 16.1787 26.917 15.8734 26.477 15.3494C26.0183 14.804 25.3103 14.1627 24.2597 13.2187L21.997 11.1827C21.8992 11.0948 21.8197 10.9886 21.763 10.87C21.7063 10.7514 21.6736 10.6228 21.6666 10.4915C21.6597 10.3602 21.6787 10.2289 21.7226 10.105C21.7665 9.98106 21.8343 9.86835 21.9223 9.77069ZM10.0023 11.1827C10.0999 11.0948 10.1793 10.9885 10.2358 10.87C10.2924 10.7514 10.325 10.6229 10.3319 10.4917C10.3388 10.3605 10.3197 10.2293 10.2759 10.1054C10.232 9.98161 10.1642 9.86764 10.0763 9.77002C9.98843 9.67241 9.88217 9.59306 9.7636 9.53651C9.64504 9.47996 9.5165 9.44732 9.38532 9.44045C9.25414 9.43358 9.1229 9.45261 8.99907 9.49646C8.87525 9.54031 8.76128 9.60812 8.66366 9.69602L6.34766 11.7814C5.365 12.664 4.55166 13.3974 3.99166 14.0614C3.40499 14.7614 2.98633 15.512 2.98633 16.44C2.98633 17.3667 3.40366 18.1174 3.99166 18.816C4.55166 19.4814 5.365 20.2147 6.34766 21.0974L8.66366 23.1827C8.86081 23.3602 9.1204 23.4521 9.38532 23.4383C9.65025 23.4244 9.89881 23.3058 10.0763 23.1087C10.2538 22.9115 10.3458 22.652 10.3319 22.387C10.318 22.1221 10.1995 21.8735 10.0023 21.696L7.73966 19.66C6.68899 18.7147 5.981 18.0734 5.52233 17.5294C5.08233 17.0054 4.98633 16.7 4.98633 16.4387C4.98633 16.1787 5.08233 15.8734 5.52233 15.3494C5.981 14.804 6.68899 14.1627 7.73966 13.2187L10.0023 11.1827Z"
+                    fill="#F9F9F9"
+                    fill-opacity="0.956863"
+                  />
+                </svg>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title fw-semibold">Coding</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newest Competition -->
+
+    <section class="competition" id="competition">
+      <div class="container">
+        <div class="row">
+          <div class="header-category col-md-6">
+            <h3 class="fw-bold">Lomba Terbaru</h3>
+          </div>
+          <div class="header-category col-md-6 d-flex flex-row-reverse">
+            <a href="newCompetition.html" type="button" class="btn btn-category"
+              >Lihat Semua</a
+            >
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <div class="competition-image">
+                <img src="assets/competition-1.svg" alt="Lomba Fotografi" />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Fotografi</p>
+                <p class="fw-semibold date-time">29 Mei - 15 Juni 2023</p>
+                <p class="competition-title">Lomba Konten Kreatif Fotografi</p>
+                <p class="competition-profile">Humas Polres Bukittinggi</p>
+                <a href="" class="btn shadow-none d-grid gap-2">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="competition-image">
+                <img src="assets/competition-2.svg" alt="Lomba Poster Ilmiah" />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Poster</p>
+                <p class="fw-semibold date-time">10 April - 24 April 2023</p>
+                <p class="competition-title">Lomba Poster Ilmiah Nasional</p>
+                <p class="competition-profile">IDN Bali</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="competition-image">
+                <img src="assets/competition-3.svg" alt="Lomba Fotografi" />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Video Cinematic</p>
+                <p class="fw-semibold date-time">08 Juli - 23 Juli</p>
+                <p class="competition-title">Lomba Video Cinematic</p>
+                <p class="competition-profile">UNUGIRI</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <div class="competition-image">
+                <img src="assets/competition-4.svg" alt="Lomba Fotografi" />
+              </div>
+              <div class="card-body">
+                <p class="competition-category">Jurnalistik</p>
+                <p class="fw-semibold date-time">29 Mei - 15 Juni 2023</p>
+                <p class="competition-title">Lomba Konten Kreatif Fotografi</p>
+                <p>Hutama Karya</p>
+                <a href="" class="btn shadow-none d-grid gap-2 disabled">Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Congaratulation Banner -->
+    <section class="carousel">
+      <div class="container">
+        <div class="carousel-header">
+          <h3 class="fw-bold">Selamat Kepada Pemenang</h3>
+        </div>
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide congratulation-slider"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="assets/winner-1.svg"
+                class="d-block w-100"
+                alt="Juara 2 Lomba Foto Street Fotografi"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/winner-2.svg"
+                class="d-block w-100"
+                alt="Juara 1 Lomba Matematika Se-Indonesia"
+              />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/winner-3.svg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/winner-4.svg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="assets/winner-5.svg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimony -->
+    <section class="testimony" id="testimony">
+      <div class="container">
+        <div class="header-testimony">
+          <h3 class="fw-bold">Apa Kata Mereka?</h3>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                </div>
+                <p class="fw-medium">
+                  Aku awalnya bingunggg banget mau nyari lomba tapi gaada yg
+                  pasti gitu. Waktu aku ketemu website ini, aku jadi ngerasa
+                  terbantu banget. Jadi sering tau apa aja lomba yang diadain
+                  baru baru ini
+                </p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img src="assets/profile-1.svg" alt="" />
+                  </div>
+                  <div class="col">
+                    <h6>Ika Rovika</h6>
+                    <p>3 weeks ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#D9D9D9"
+                    />
+                  </svg>
+                </div>
+                <p class="fw-medium">
+                  Makasih banget yaa asah prestasiii. Aku jadi tambah semangat
+                  buat ikut lomba tauu
+                </p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img src="assets/profile-2.svg" alt="profile-2" />
+                  </div>
+                  <div class="col">
+                    <h6>Anindita</h6>
+                    <p>1 month ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-body">
+                <div class="star">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="28"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 0L18.3677 10.3647H29.2658L20.4491 16.7705L23.8168 27.1353L15 20.7295L6.18322 27.1353L9.55093 16.7705L0.734152 10.3647H11.6323L15 0Z"
+                      fill="#FFD600"
+                    />
+                  </svg>
+                </div>
+                <p class="fw-medium">
+                  i like this website so much, bcs so many competition that was
+                  held
+                </p>
+              </div>
+            </div>
+            <div class="profile">
+              <div class="container">
+                <div class="row row-cols-2">
+                  <div class="col-3">
+                    <img src="assets/profile-3.svg" alt="profile-3" />
+                  </div>
+                  <div class="col">
+                    <h6>Madhava Jarrel</h6>
+                    <p>1 month ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competition Announcement -->
+    <section class="announcement" id="announcement">
+      <div class="container">
+        <div class="row">
+          <div class="header-category col-md-6">
+            <h3 class="fw-bold">Pengumuman Lomba</h3>
+          </div>
+          <div class="header-category col-md-6 d-flex flex-row-reverse">
+            <a type="button" class="btn btn-category">Lihat Semua</a>
+          </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-90 border-light">
+              <div class="announcement-image">
+                <img
+                  src="assets/announcement-1.svg"
+                  alt="Pengumuman Lomba Menulis NNC"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title fw-semibold">
+                  Pemenang Lomba Menulis NNC - 2022
+                </h6>
+                <hr />
+                <p class="card-text">
+                  Hallo teman-teman semua, gimana kabar kalian? Kalian, yang
+                  khususnya menjadi peserta Lomba Menulis NNC...
+                </p>
+                <a href="article.html" class="fs-6 text-decoration-none">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-90 border-light">
+              <div class="announcement-image">
+                <img
+                  src="assets/announcement-2.svg"
+                  alt="Pengumuman Lomba Vlog & Poster PGSD Creativity Project 2020"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title fw-semibold">
+                  Pemenang Lomba Vlog & Poster PGSD Creativity Project 2020
+                </h6>
+                <hr />
+                <p class="card-text">
+                  PGSD Creativity Project 2020 merupakan ajang perlombaan
+                  tingkat Nasional berbasis digital yang diselenggarakan ...
+                </p>
+                <a href="#" class="fs-6 text-decoration-none">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-90 border-light">
+              <div class="announcement-image">
+                <img
+                  src="assets/announcement-3.svg"
+                  alt="Pengumuman Kejuaraan Lomba Menulis Cerpen SIP Publishing"
+                />
+              </div>
+              <div class="card-body">
+                <h6 class="card-title fw-semibold">
+                  Pengumuman Kejuaraan Lomba Menulis Cerpen SIP Publishing
+                </h6>
+                <hr />
+                <p class="card-text">
+                  Selamat untuk para pemenang Hadiah akan segera kami
+                  kirim.Informasi lebih lanjut akan Kami...
+                </p>
+                <a href="#" class="fs-6 text-decoration-none">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promotion -->
+    <section class="promotion" id="promotion">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="copy">
+              <div class="text-promotion-bold">
+                <h3 class="fw-semibold">Daftarkan Dirimu,</h3>
+                <h3 class="fw-semibold">Tunjukkan Bakatmu!</h3>
+              </div>
+              <div class="text-promotion-regular">
+                <p>
+                  Ayo aktif dalam Berbagai Lomba yang sesuai dengan Minat dan
+                  Bakatmu.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="text-promotion-right d-flex flex-row-reverse">
+              <a
+                href="#"
+                class="btn"
+                data-bs-toggle="modal" data-bs-target="#registerModal"
+              >
+                Daftar Sekarang
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer" id="footer">
+      <div class="container container-footer">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-img">
+              <img
+                src="assets/footer-logo.svg"
+                alt="Footer Logo Asah Prestasi"
+              />
+            </div>
+          </div>
+          <div class="col-md-3 g-2 footer-link">
+            <h6>Penelusuran</h6>
+            <div class="penelusuran-link">
+              <p>
+                <a href="#">Beranda</a>
+              </p>
+              <p>
+                <a href="#competition">Lomba</a>
+              </p>
+              <p>
+                <a href="#testimony">Testimoni</a>
+              </p>
+              <p>
+                <a href="#announcement">Pengumuman</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 g-2 footer-link">
+            <h6>Kontak Kami</h6>
+            <div class="kontak-kami">
+              <p>
+                <a class="disabled">Telepon : +612345678910</a>
+              </p>
+              <p>
+                <a class="disabled">Email : @asahprestasi</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 g-2 footer-link">
+            <h6>Tentang</h6>
+            <div class="tentang-link">
+              <p>
+                <a class="disabled">Karir</a>
+              </p>
+              <p>
+                <a class="disabled">Kebijakan Privasi</a>
+              </p>
+              <p>
+                <a class="disabled">Ketentuan Layanan</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <hr />
+          <p>&copy;2023 GaNiSa Team</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Script -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script/script.js"></script>
+  </body>
+</html>

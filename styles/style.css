@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--light-white);
+}
+
+
+
+:root {
+    /* Color Styles */
+    --primary: #4467D4;
+    --secondary: #263C80;
+    --tertiary: #B1B1B1;
+    --info: #BCA97B;
+    --light-blue: #9B9FD1;
+    --light-white: #f9f9f9;
+
+    /* Font Weight */
+    --fw-regular : 400;
+}
+
+/* Navbar */
+
+.btn {
+    border-radius: 0.625rem;
+    padding: 5px 20px;
+    margin: 5px;
+}
+
+.navbar-css.btn {
+    border: none;
+    background-color: var(--primary);
+}
+
+.btn-login {
+    background-color: var(--primary);
+    border-style: none;
+    color: var(--light-white);
+}
+
+.btn-login:hover {
+    background-color: var(--secondary);
+    color: var(--light-white);
+}
+
+.btn-register {
+    border: 1px solid;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-register:hover {
+    background-color: var(--secondary);
+    color: var(--light-white);
+    border-color: var(--secondary);
+}
+
+.navbar-css .main-link {
+    color: var(--primary);
+}
+
+.navbar-css .other-link {
+    color: var(--primary);
+    font-weight: var(--fw-regular);
+}
+
+/* Button Outline */
+
+.btn-category {
+    border: 1px solid;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-category:hover {
+    background-color: var(--secondary);
+    color: var(--light-white);
+}
+
+/* Modal */
+
+.modal-header h1 {
+    color: var(--primary);
+}
+
+/* Hero */
+
+section.hero {
+    background-color: var(--primary);
+    padding-top: 10rem;
+}
+
+.text-hero-bold {
+    color: var(--light-white);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.text-hero-regular p {
+    font-size: 1rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.text-hero-regular p {
+    color: var(--light-white);
+}
+
+.text-hero-regular a {
+    background-color: var(--light-white);
+    color: var(--secondary);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.text-hero-regular a:hover {
+    background-color: var(--secondary);
+    color: var(--light-white);
+    border-style: none;
+}
+
+.col-md-6 img{
+    width: 36rem;
+    height: 28rem;
+}
+
+/* Number Counting Animation */
+
+section.counting-animation {
+    background-color: var(--primary);
+    padding-bottom: 3rem;
+}
+
+section.counting-animation .wrapper {
+    background-color: var(--light-white);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1em;
+    margin: 0 5rem 0 5rem;
+    padding: 1rem;
+    box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+p.num {
+    color: var(--primary);
+    display: grid;
+    font-size: 2rem;
+}
+
+p.text {
+    color: var(--info);
+}
+
+/* Competition Category */
+
+section.category {
+    background-color: var(--light-white);
+}
+
+.header-category {
+    margin-top: 3rem;
+}
+
+.header-category h3 {
+    color: var(--primary);
+}
+
+.category .card {
+    border: none;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.category-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.625rem;
+
+    margin-top: 1.13rem;
+    margin-left: 1.5rem;
+}
+
+.category-icon .symbol {
+    position: absolute;
+    left: 2.0625rem;
+    top: 1.6875rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: var(--primary);
+}
+
+.card-text {
+    width: 15rem;
+
+    color: #A0A0A0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 150%; /* 1.125rem */
+}
+
+/* Newest Competition */
+
+section.competition {
+    background-color: var(--light-white);
+    padding: 3rem;
+}
+
+.header-category {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.competition .container .card {
+    border: none;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.08);
+}
+
+.competition-image img {
+    height: 14rem;
+    width: 100%;
+    align-self: stretch;
+    padding: 0.5rem;
+}
+
+.card-body .competition-category {
+    color: rgba(68, 103, 212, 0.70);
+    font-size: 0.625rem;
+}
+
+.card-body .date-time{
+    color: var(--primary);
+    font-size: 0.875rem;
+}
+
+.card-body .competition-title {
+    font-size: 0.9rem;
+}
+
+.card-body .competition-profile {
+    font-size: 0.8rem;
+}
+
+section.competition .card-body a {
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-style: none;
+
+    border-radius: 0.625rem;
+    background: var(--primary);
+    color: var(--light-white);
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+section.competition .card-body a:hover {
+    background-color: var(--secondary);
+}
+
+/* Congratulation Banner */
+
+section.carousel {
+    background-color: var(--light-white);
+    padding-bottom: 5rem;
+}
+
+.carousel-header h3 {
+    color: var(--primary);
+}
+
+.congratulation-slider {
+    padding-top: 3rem;
+}
+
+/* Testimony */
+
+section.testimony {
+    background-color: var(--primary);
+    padding: 3rem;
+}
+
+section.testimony .header-testimony h3 {
+    color: var(--light-white);
+}
+
+section.testimony .card-body {
+    width: 23rem;
+}
+
+section.testimony .card-body p {
+    font-size: 0.87rem;
+    padding-top: 1rem;
+}
+
+section.testimony .col .profile {
+    margin-top: 0.5rem;
+}
+
+.profile .col h6 {
+    color: var(--light-white);
+}
+
+.profile .col p {
+    color: rgba(249, 249, 249, 0.80);
+    font-size: 0.625rem;
+}
+
+/* Competition Announcement */
+
+section.announcement {
+    background-color: var(--light-white);
+}
+
+section.announcement .container .row .col .card {
+    width: 22.5rem;
+    align-items: center;
+    height: 30rem;
+    margin-bottom: 3rem;
+    background: #F9F9F9;
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.08);
+}
+
+section.announcement .container .card img {
+    width: 23.5rem;
+    padding: 1rem;
+}
+
+section.announcement .card-body h6 {
+    color: var(--primary);
+    text-align: justify;
+    font-size: 1.25 rem;
+}
+
+section.announcement .card-body p {
+    color: #A0A0A0;
+    text-align: justify;
+    font-size: 0.75rem;
+    width: 21rem;
+}
+
+section.announcement .card-body a {
+    color: var(--primary);
+}
+
+/* Promotion */
+
+section.promotion {
+    background-color: var(--primary);
+    margin-top: 3rem;
+    padding: 5rem;
+}
+
+.text-promotion-bold h3 {
+    color: var(--light-white);
+}
+
+.text-promotion-regular p {
+    font-size: 1rem;
+    width: 70%;
+    margin-bottom: 3rem;
+}
+
+.text-promotion-regular p {
+    color: var(--light-white);
+}
+
+.text-promotion-right a{
+    background-color: var(--light-white);
+    color: var(--primary);
+}
+
+.text-promotion-right a:hover {
+    background-color: var(--secondary);
+    color: var(--light-white);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--light-white);
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+footer .footer-link h6 {
+    font-size: 1rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 150%;
+    
+}
+
+footer .footer-link p a{
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 400;
+    color: var(--primary);
+    text-decoration: none;
+    line-height: 150%;
+}
+
+footer .copyright hr {
+    color: var(--primary);
+    stroke-width: 1px;
+}
+
+footer .copyright p {
+    color: var(--primary);
+}
+
+
+
+
+
+/* Competition File */
+
+section.competition-page {
+    margin-top: 10rem;
+}
+
+section.competition-page img {
+    width: 80%;
+}
+
+section.competition-page h1 {
+    color: #000;
+}
+
+section.competition-page p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+section.menu-bar {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+section.menu-bar input {
+    border-color: var(--primary);
+}
+
+section.menu-bar input::placeholder {
+    color: var(--primary);
+}
+
+
+
+
+
+
+/* Article Page */
+
+section.article img {
+    width: 50%;
+}
+
+section.article .article-content p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: justify;
+}
+
+section.article .article-content img {
+    width: 20%;
+    margin-bottom: 1rem;
+}
